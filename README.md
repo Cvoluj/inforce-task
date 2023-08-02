@@ -63,8 +63,8 @@ POST/GET etc. - type of request<br>
 {<br>
  context of your request sended as JSON<br>
 }<br>
-
-
+<br>
+<br>
 **http://localhost:8000/api/register/**<br>
 POST<br>
 {   <br>
@@ -84,9 +84,9 @@ also you can visit<br>
 **http://localhost:8000/api/user/** <br>
 GET<br>
 If you have several account you probably will see not your account, because i didn`t made logout<br>
-
+<br>
 for restaurant.views.py documentation very nice and clear<br>
-
+<br>
 menu.views.py have almost same documentation as restaurant.views.py but more complicated: <br>
 **http://localhost:8000/api/menus/** <br>
 POST<br>
@@ -107,8 +107,8 @@ POST<br>
         }<br>
     ]<br>
 }<br>
-
-
+<br>
+<br>
 voting app not fully maded, but with<br>
 **http://localhost:8000/api/current/** <br>
 GET<br>
@@ -159,14 +159,14 @@ you will get somthing like this, with all menus dated for today<br>
         ]<br>
     }<br>
 ]<br>
-
+<br>
 **http://localhost:8000/api/vote/** <br>
 POST (it takes only id`s or pk`s, but not for all menus created pk`s)<br>
 {<br>
     "menu": "1",<br>
     "employee": "3"<br>
 }<br>
-
+<br>
 A most weak part of code, but I already spend much time for this project and in fact that it`s my first meeting with REST i`m fully satisfied with the result.
 
 
