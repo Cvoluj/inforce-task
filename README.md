@@ -57,13 +57,13 @@ Employee has logic as User and also Staff, which has options to create **Restrau
 
 ## JSON and API
 _and example how will look request in postman and in general_
-```
-**link/with/smt** - it`s your url for API testing
-POST/GET etc. - type of request
-{
- context of your request sended as JSON
-}
-```
+
+**link/with/smt** - it`s your url for API testing<br>
+POST/GET etc. - type of request<br>
+{<br>
+ context of your request sended as JSON<br>
+}<br>
+
 
 **http://localhost:8000/api/register/**
 POST
