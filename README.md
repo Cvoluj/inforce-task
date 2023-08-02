@@ -65,13 +65,14 @@ POST/GET etc. - type of request<br>
 }<br>
 <br>
 <br>
-**http://localhost:8000/api/register/**<br>
+**http://localhost:8000/api/register/** <br>
 POST<br>
 {   <br>
     "username": "test",<br>
     "email":"test@gmail.com",<br>
     "password":"password"<br>
 }<br>
+<br>
 **http://localhost:8000/api/login/**<br>
 POST<br>
 }<br>
