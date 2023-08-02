@@ -65,107 +65,107 @@ POST/GET etc. - type of request<br>
 }<br>
 
 
-**http://localhost:8000/api/register/**
-POST
-{   
-    "username": "test",
-    "email":"test@gmail.com",
-    "password":"password"
-}
-**http://localhost:8000/api/login/**
-POST
-}
-    "email":"test@gmail.com",
-    "password":"password"
-}
-after this request you will get token, you should copy it and place in
-Postman -> Authorization -> Type = Baerer -> paste
-also you can visit
-**http://localhost:8000/api/user/**
-GET
-If you have several account you probably will see not your account, because i didn`t made logout
+**http://localhost:8000/api/register/**<br>
+POST<br>
+{   <br>
+    "username": "test",<br>
+    "email":"test@gmail.com",<br>
+    "password":"password"<br>
+}<br>
+**http://localhost:8000/api/login/**<br>
+POST<br>
+}<br>
+    "email":"test@gmail.com",<br>
+    "password":"password"<br>
+}<br>
+after this request you will get token, you should copy it and place in<br>
+Postman -> Authorization -> Choose Type Baerer Token -> paste<br>
+also you can visit<br>
+**http://localhost:8000/api/user/** <br>
+GET<br>
+If you have several account you probably will see not your account, because i didn`t made logout<br>
 
-for restaurant.views.py documentation very nice and clear
+for restaurant.views.py documentation very nice and clear<br>
 
-menu.views.py have almost same documentation as restaurant.views.py but more complicated: 
-**http://localhost:8000/api/menus/**
-POST
-{
-    "name": "Unique menu",
-    "restaurant_name": "Portfolio",
-    "date": "2023-08-02",
-    "menu_items": [
-        {
-            "name": "New Item 1",
-            "description": "New Item 1 Description",
-            "price": "12.34"
-        },
-        {
-            "name": "New Item 2",
-            "description": "New Item 2 Description",
-            "price": "45.67"
-        }
-    ]
-}
+menu.views.py have almost same documentation as restaurant.views.py but more complicated: <br>
+**http://localhost:8000/api/menus/** <br>
+POST<br>
+{<br>
+    "name": "Unique menu",<br>
+    "restaurant_name": "Portfolio",<br>
+    "date": "2023-08-02",<br>
+    "menu_items": [<br>
+        {<br>
+            "name": "New Item 1",<br>
+            "description": "New Item 1 Description",<br>
+            "price": "12.34"<br>
+        },<br>
+        {<br>
+            "name": "New Item 2",<br>
+            "description": "New Item 2 Description",<br>
+            "price": "45.67"<br>
+        }<br>
+    ]<br>
+}<br>
 
 
-voting app not fully maded, but with
-**http://localhost:8000/api/current/**
-GET
-you will get somthing like this, with all menus dated for today
-[
-    {
-        "name": "FAL Menu",
-        "date": "2023-08-02",
-        "items": [
-            {
-                "id": 77,
-                "created_at": "2023-08-02",
-                "updated_at": "2023-08-02",
-                "name": "Updated Item 1",
-                "description": "Updated Item 1 Description",
-                "price": "99.99"
-            },
-            {
-                "id": 78,
-                "created_at": "2023-08-02",
-                "updated_at": "2023-08-02",
-                "name": "New Item 3",
-                "description": "New Item 3 Description",
-                "price": "78.90"
-            }
-        ]
-    },
-    {
-        "name": "FAL Menu",
-        "date": "2023-08-02",
-        "items": [
-            {
-                "id": 79,
-                "created_at": "2023-08-02",
-                "updated_at": "2023-08-02",
-                "name": "adfag Item 1",
-                "description": "Updated Item 1 Description",
-                "price": "91239.99"
-            },
-            {
-                "id": 80,
-                "created_at": "2023-08-02",
-                "updated_at": "2023-08-02",
-                "name": "afgags ftem 3",
-                "description": "New Item 3 Description",
-                "price": "78.90"
-            }
-        ]
-    }
-]
+voting app not fully maded, but with<br>
+**http://localhost:8000/api/current/** <br>
+GET<br>
+you will get somthing like this, with all menus dated for today<br>
+[<br>
+    {<br>
+        "name": "FAL Menu",<br>
+        "date": "2023-08-02",<br>
+        "items": [<br>
+            {<br>
+                "id": 77,<br>
+                "created_at": "2023-08-02",<br>
+                "updated_at": "2023-08-02",<br>
+                "name": "Updated Item 1",<br>
+                "description": "Updated Item 1 Description",<br>
+                "price": "99.99"<br>
+            },<br>
+            {<br>
+                "id": 78,<br>
+                "created_at": "2023-08-02",<br>
+                "updated_at": "2023-08-02",<br>
+                "name": "New Item 3",<br>
+                "description": "New Item 3 Description",<br>
+                "price": "78.90"<br>
+            }<br>
+        ]<br>
+    },<br>
+    {<br>
+        "name": "FAL Menu",<br>
+        "date": "2023-08-02",<br>
+        "items": [<br>
+            {<br>
+                "id": 79,<br>
+                "created_at": "2023-08-02",<br>
+                "updated_at": "2023-08-02",<br>
+                "name": "adfag Item 1",<br>
+                "description": "Updated Item 1 Description",<br>
+                "price": "91239.99"<br>
+            },<br>
+            {<br>
+                "id": 80,<br>
+                "created_at": "2023-08-02",<br>
+                "updated_at": "2023-08-02",<br>
+                "name": "afgags ftem 3",<br>
+                "description": "New Item 3 Description",<br>
+                "price": "78.90"<br>
+            }<br>
+        ]<br>
+    }<br>
+]<br>
 
-**http://localhost:8000/api/vote/**
-POST (it takes only id`s or pk`s, but not for all menus created pk`s)
-{
-    "menu": "1",
-    "employee": "3"
-}
+**http://localhost:8000/api/vote/** <br>
+POST (it takes only id`s or pk`s, but not for all menus created pk`s)<br>
+{<br>
+    "menu": "1",<br>
+    "employee": "3"<br>
+}<br>
 
 A most weak part of code, but I already spend much time for this project and in fact that it`s my first meeting with REST i`m fully satisfied with the result.
 
