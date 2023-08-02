@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+  db:
+    image: postgres
+    container_name: lunch_db
+    environment:
+      POSTGRES_DB: lunchdb
+      POSTGRES_USER: basic
+      POSTGRES_PASSWORD: 13427687
+      POSTGRES_INITDB_ARGS: "-A md5"
+    ports:
+      - "5432:5432"
