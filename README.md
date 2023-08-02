@@ -9,6 +9,6 @@ https://www.docker.com/get-started
 
 ## Clone Repository or download it: 
 Clone your project's repository to your local machine using Git. You can use the following command to clone the repository:
-'''
+```
 git clone <https://github.com/Cvoluj/inforce-task.git>
-'''
+```
