@@ -57,7 +57,7 @@ Employee has logic as User and also Staff, which has options to create **Restrau
 
 ## JSON and API
 _and example how will look request in postman and in general_
-
+<br>
 **link/with/smt** - it`s your url for API testing<br>
 POST/GET etc. - type of request<br>
 {<br>
@@ -161,12 +161,12 @@ you will get somthing like this, with all menus dated for today<br>
 ]<br>
 <br>
 **http://localhost:8000/api/vote/** <br>
-POST (it takes only id`s or pk`s, but not for all menus created pk`s)<br>
+POST (it takes only id's or pk's, but not for all menus created pk's)<br>
 {<br>
     "menu": "1",<br>
     "employee": "3"<br>
 }<br>
 <br>
-A most weak part of code, but I already spend much time for this project and in fact that it`s my first meeting with REST i`m fully satisfied with the result.
+A most weak part of code, but I already spend much time for this project and in fact that it's my first meeting with REST i'm fully satisfied with the result.
 
 
