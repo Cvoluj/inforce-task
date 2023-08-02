@@ -58,7 +58,7 @@ Employee has logic as User and also Staff, which has options to create **Restrau
 ## JSON and API
 _and example how will look request in postman and in general_
 <br>
-**link/with/smt** - it`s your url for API testing<br>
+**link/with/smt** - it's your url for API testing<br>
 POST/GET etc. - type of request<br>
 {<br>
  context of your request sended as JSON<br>
