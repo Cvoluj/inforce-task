@@ -42,7 +42,7 @@ In my project superuser requiers mail, keep that in my mind.
 
 I hope it will work, afterall be patient
 
-## Install Postman or simmilar app to make JSON request
+## Install Postman or simillar app to make JSON request
 
 https://www.postman.com/downloads/
 
