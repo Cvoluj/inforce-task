@@ -6,3 +6,9 @@ Probably, it will never run on your devices, but you can try
 ## Install Docker:
 If you haven't already, you need to install Docker on your system. Docker allows you to create, manage, and run containers. You can download and install Docker from the official website: 
 https://www.docker.com/get-started
+
+## Clone Repository or download it: 
+Clone your project's repository to your local machine using Git. You can use the following command to clone the repository:
+'''
+git clone [<repository_url>](https://github.com/Cvoluj/inforce-task.git)https://github.com/Cvoluj/inforce-task.git
+'''
